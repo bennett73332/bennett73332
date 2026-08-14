@@ -72,6 +72,12 @@ main {
   margin-top: 20px;
 }
 
+#currentwork {
+  border: 4px rgb(35, 16, 16) ridge;
+  padding: 8px;
+  margin-top: 20px;
+}
+
 h2, h3 {
   margin: 0px;
 }

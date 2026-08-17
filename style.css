@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 #all-contents {
   max-width: 800px;
   margin: 0 auto;
@@ -64,7 +65,7 @@ main {
 .content {
   flex: 1;
   padding: 15px;
-}
+}(237, 190, 239)
 
 #interests {
   border: 4px rgb(35, 16, 16) ridge;
@@ -73,7 +74,6 @@ main {
   background-color: rgb(237, 190, 239);
 }
 
-#currentwork {
   border: 4px rgb(35, 16, 16) ridge;
   padding: 8px;
   margin-top: 20px;
@@ -88,5 +88,57 @@ h2, h3 {
  border: 4px rgb(35, 16, 16) ridge;
  padding: 8px;
  margin-top: 20px;
- background-color: rgb(237, 190, 239);
+ background-color: rgb;
+}
+
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#portfolio li {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#portfolio a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #444;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: rgb(237, 190, 239);
+  border: 1px solid #030202;
+  border-radius: 12px;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+#portfolio a:hover {
+  background: #000;
+  color: rgb(237, 190, 239);
+  transform: translateX(4px);
+}
+
+#portfolio a::after {
+  content: "->";
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.25s ease;
+  white-space: nowrap;
+}
+
+#portfolio a:hover::after {
+  opacity: 1;
 }

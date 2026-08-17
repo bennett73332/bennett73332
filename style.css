@@ -24,7 +24,7 @@ nav {
 h1 {
   display: flex;
   align-items: center;
-  color: white;
+  color: rgb(10, 4, 4);
   flex: 1;
   margin: 0;
 }
@@ -43,11 +43,11 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #110b0b;
 }
 
 main {
-  background: rgb(247, 247, 246)
+  background: rgb(7, 7, 5)
   display: flex;
   margin-top: 20px;
 }
@@ -70,14 +70,23 @@ main {
   border: 4px rgb(35, 16, 16) ridge;
   padding: 8px;
   margin-top: 20px;
+  background-color: rgb(237, 190, 239);
 }
 
 #currentwork {
   border: 4px rgb(35, 16, 16) ridge;
   padding: 8px;
   margin-top: 20px;
+  background-color: rgb(237, 190, 239);
 }
 
 h2, h3 {
   margin: 0px;
+}
+
+#moreaboutme {
+ border: 4px rgb(35, 16, 16) ridge;
+ padding: 8px;
+ margin-top: 20px;
+ background-color: rgb(237, 190, 239);
 }

@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 nav {
-  background: rgb(248, 246, 246);
+  background: rgb(185, 126, 224);
   margin: 0 auto;
   display: flex;
   padding: 10px;
@@ -48,7 +48,7 @@ a {
 }
 
 main {
-  background: rgb(7, 7, 5)
+  background: rgb(185, 126, 224);
   display: flex;
   margin-top: 20px;
 }
@@ -65,16 +65,10 @@ main {
 .content {
   flex: 1;
   padding: 15px;
-}(237, 190, 239)
-
-#interests {
-  border: 4px rgb(35, 16, 16) ridge;
-  padding: 8px;
-  margin-top: 20px;
-  background-color: rgb(237, 190, 239);
 }
 
-  border: 4px rgb(35, 16, 16) ridge;
+#interests {
+  border: 4px rgb(28, 15, 15) ridge;
   padding: 8px;
   margin-top: 20px;
   background-color: rgb(237, 190, 239);
@@ -84,11 +78,18 @@ h2, h3 {
   margin: 0px;
 }
 
+#currentwork {
+   border: 4px rgb(35, 16, 16) ridge;
+ padding: 8px;
+ margin-top: 20px;
+ background-color: rgb(237, 190, 239);
+}
+
 #moreaboutme {
  border: 4px rgb(35, 16, 16) ridge;
  padding: 8px;
  margin-top: 20px;
- background-color: rgb;
+ background-color: rgb(237, 190, 239);
 }
 
 .content h1 {
@@ -126,7 +127,7 @@ h2, h3 {
 }
 
 #portfolio a:hover {
-  background: #000;
+  background: #fcfbfb;
   color: rgb(237, 190, 239);
   transform: translateX(4px);
 }

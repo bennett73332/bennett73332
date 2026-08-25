@@ -27,11 +27,31 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    // toggleGrid();
+    toggleGrid();
 
 
     // TODO 2 - Create Platforms
-
+createPlatform(200,700,50,50, "purple");
+createPlatform(300,600,20,20, "red");
+createPlatform(300,400,20,200, "orange");
+createPlatform(300,400,100,20, "yellow");
+createPlatform(100,500,20,20, "orange");
+createPlatform(300,260,500,20, "limegreen");
+createPlatform(200,260,100,20, "limegreen");
+createPlatform(500,400,30,30, "limegreen");
+createPlatform(650,400,30,30, "limegreen");
+createPlatform(750,400,150,20, "blue");
+createPlatform(890,400,20,400, "blue");
+createPlatform(890,0,20,300, "blue");
+createPlatform(880,290,20,20, "blue");
+createPlatform(1100,650,200,20, "purple");
+createCollectable("diamond", 590,450);
+createCollectable("diamond", 200,150);
+createCollectable("diamond", 1150,500);
+createCannon("bottom", 600, 1500);
+createCannon("top", 400, 1500);
+createCannon("right", 250, 1000);
+//btw DO NOT touch first three platform lines or wallhop won't work. I am not gonna fix or explain this
 
 
 

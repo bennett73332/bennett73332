@@ -8,7 +8,9 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-image: url("https://media.entertainmentearth.com/assets/images/f3083493a19241df897194e93da6e101lg.jpg");
+        background-size: cover;
+        background-color: purple; 
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -21,6 +23,8 @@
 
       .board {
         height: 100vh;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6VKlm-SePRW7iZHgeMffPGOWdeE1RWa5G5ZIOmgSUdPUga00ORB6HH8:https://tfwiki.net/mediawiki/images2/thumb/5/52/G1_Teletraan_I.JPG/400px-G1_Teletraan_I.JPG&s=10");
+        background-size: cover;
       }
     </style>
     <!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -69,8 +73,12 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-
-
+  var positionX = 0;
+  var points = 0;
+var speed = 10
+var positionY;
+var speedY;
+var boardHeight = JQuery(window).height(800);
 
 
 
@@ -80,10 +88,24 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
-        
-
-          
+              
+        positionX = positionX + speed;
+  moveBoxTo(positionX);
+        if (positionX > boardWidth){
+        speed *= -1;
+        }  
+        else if (positionX < 0){
+      speed *= -1;
+        }
+        function moveBoxTo(newPositionX, newPositionY) {
+          box.css("left", newPositionX);
+          box.css("top", newPositionY);
+        }
+        moveBoxTo(positionX, positionY);
+        moveBoxTo(newPositionY);
+        if (newPositionY > boardHeight){
+          speed *= -1;
+        }
         }
 
         /**
@@ -94,8 +116,10 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
-
+positionX = 0;
+points += 1
+changeBoxText(points);
+speed = 3 * points + 10
 
 
         }
